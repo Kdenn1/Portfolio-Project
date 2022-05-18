@@ -19,8 +19,10 @@
     height: 100vh;
     background: #eff4fd;
     font-size: 30px;
-    background-image: url(./html/images/284469.jpg);
+    background-image: url(./html/images/website\ background.webp);
 }
+
+
 
 .hero a:hover {
     color:aqua;
@@ -87,40 +89,64 @@ border-radius: 3px;
 }
 
 
+
+
+
+
+
 /*div stylings */
 
-.coding {
-    height: 350px;
-    width: 350px;
-}
-
-.computer {
-    height: 400px;
-    width: 400px;
+.box {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
-.images {
-    height: 100px;
-    width: 100px;
-    position: relative;
-    bottom: 500px;
-    right: -1465px;
+/* bio */
+.bio {
+    flex: 1;
 }
 
-.images img {
-    position: absolute;
-    left: 35%;
-    bottom: -400px;
-    transform: translateX(-50%);
-    transition: bottom 1s, left 1s;
+
+
+
+
+/* projects */
+
+.box-site {
+    display: flex;
+    width: 100%;
+    left: 200px;
+    
 }
 
-.images:hover .coding {
-    bottom: 40px;
+
+.projects {
+text-align: left;
+top: 200px;
 }
 
-.images:hover .computer {
-    left: 45%;
+.projects h1 {
+    text-align: right;
 }
+
+.projects p {
+    font-size: 20px;
+    left: 100px;
+    
+}
+
+
+
+
+
+
+
+/* contact */
+
+.contact {
+    flex: 1;
+}
+
+
 
