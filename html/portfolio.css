@@ -5,7 +5,12 @@ body {
 header {
     background-image:url(./Portfolio-Project/css/html/images/website\ background.webp);
     color: white;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
+
+
 .website-header {
     padding: 20px;
     height: 80px;
@@ -55,10 +60,11 @@ header span {
 /*flexbox configurations and main body elements*/
 
 .parent {
-    height: 100vh;
+    height: 150vh;
     border: 10px solid black;
     margin:0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     flex-direction: row;
     align-content: center;
@@ -77,6 +83,8 @@ header span {
     border: 2px solid black;
     margin-top: 10px;
     box-shadow: 5px 10px 15px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
 }
 
 .child1 h2 {
@@ -129,13 +137,20 @@ header span {
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 5px 10px 15px rgba(0,0,0,0.25);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .child2 iframe {
-    max-width: 880px;
-    margin-left: 5px;
+   
+    margin-left: 20px;
     margin-right: 5px;
     border: 2px solid black;
+    height: 350px;
+    width: 850px;
+    
+
 }
 
 .child2 h1 {
@@ -164,6 +179,8 @@ header span {
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 5px 10px 15px rgba(0,0,0,0.25);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .child3 h1 {
@@ -210,3 +227,364 @@ input[type=submit]:hover {
     align-items: center;
 }
 
+/* media queries */ 
+
+/* 980px max */
+
+@media screen and (max-width: 980px) {
+
+header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+header h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.website-header {
+    justify-content: center;
+}
+
+.website-header img {
+    height: 35px;
+    width: 35px;
+}
+
+.website-header h1 {
+    font-size: 25px;
+}
+
+.website-header span {
+    font-size: 20px;
+}
+
+nav {
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+header nav ul li {
+    justify-content: center;
+}
+
+header nav ul li a {
+    justify-content: center;
+}
+
+.parent {
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* about me section */
+
+.child1 {
+    width: 800px;
+    height: 250px;
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 0;
+}
+
+.child1 p {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 45px;
+    font-size: 17px;
+}
+
+.child1 button {
+    height: 30px;
+    width: 90px;
+    font-size: 10px;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+.child1 h2 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-left: 45px;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.child1 img {
+    height: 140px;
+    width: 140px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*projects section */
+
+.child2 {
+    height: 400px;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child2 iframe {
+    height: 180px;
+    width: 750px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.child2 h1 {
+    margin-left: 320px;
+    margin-top: 5px;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.child2 p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.child2 h3 {
+    margin-left: 210px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+/* Contact section */
+
+
+.child3 {
+    height: 500px;
+    width: 800px;
+}
+
+.child3 h1 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+input[type=text], select, textarea {
+    width: 70%;
+    height: 20px;
+    margin-left: 150px;
+}
+
+input[type=submit] {
+    margin-left: 370px;
+    
+}
+
+.child3 label {
+    margin-left: 10px;
+}
+
+.also {
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.also ul {
+    margin-left: -23px;
+}
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+.parent {
+    flex-wrap: wrap;
+}
+
+
+/* about me section */
+
+.child1 {
+    width: 650px;
+    height: 200px;
+    margin-top: 5px;
+}
+
+.child1 h2 {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.child1 img {
+    height: 120px;
+    width: 120px;
+    margin-left: 0px;
+}
+
+.child1 p {
+    font-size: 12.5px;
+    margin-right: 50px;
+}
+
+/* projects section */
+
+.child2 {
+    width: 650px;
+    height: 400px;
+    margin-top: 5px;
+}
+
+.child2 h1 {
+    margin-left: 250px;
+}
+
+.child2 h3 {
+    margin-left: 125px;
+}
+
+
+
+/* contact section */
+
+.child3 {
+    width: 650px;
+    height: 500px;
+    margin-top: 5px;
+}
+
+.child3 h1 {
+    font-size: 15px;
+}
+
+input[type=text], select, textarea {
+    width: 80%;
+    margin-left: 10px;
+    height: 10px;
+}
+
+}
+
+/* media query for 575px and smaller */
+
+@media screen and (max-width: 575px) {
+
+.parent {
+    flex-wrap: wrap;
+}
+
+.website-header h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.website-header img {
+    height: 40px;
+    width: 40px;
+}
+
+/* about me section */
+
+.child1 {
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.child1 h2 {
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+.child1 p {
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 11px;
+}
+
+.child1 button {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 1px;
+}
+
+.child1 img {
+    height: 110px;
+    width: 110px;
+    margin-left: 5px;
+    
+}
+
+
+
+/* projects section */
+
+.child2 {
+    width: 350px;
+    flex-direction: column;
+}
+
+.child2 h1 {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.child2 p {
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.child2 iframe {
+    width: 335px;
+    margin-left: 5px;
+    height: 250px;
+    margin-top: 12px;
+}
+
+.child2 h3 {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* contact section */
+
+.child3 {
+    width: 350px;
+    flex-direction: column;
+}
+
+input[type=text], select, textarea {
+    width: 30%;
+}
+
+textarea {
+    width: 70%;
+    margin-left: 18px;
+}
+
+select {
+    width: 70%;
+}
+
+input[type=submit] {
+    margin-left: 40px;
+}
+}
